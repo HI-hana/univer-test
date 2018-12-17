@@ -3,26 +3,22 @@ var p = document.getElementById('text');
 var missType = 0;    //入力ミスの回数
 var cnt = 0;            //入力数
 //タイピングする文字列をここで用意しておく
-var text1 = {
- おはよう:"ohayou",
- おやすみ:"oyasumi",
- ありがとう :"arigatou",
- 車 :"kuruma",
- 財布 :"saihu",
- 健康 :"kennkou",
- 時計 :"tokei",
- テレビ :"terebi",
- 鉛筆 :"ennpitu",
- メガネ :"megane",
- ガラス :"garasu",
- 勉強 :"bennkyou",
- トイレ :"toire"
-};
+var textLists = [
+ "ohayou",
+ "oyasumi",
+ "arigatou",
+ "kuruma",
+ "saihu",
+ "kennkou",
+ "tokei",
+ "terebi",
+ "ennpitu",
+ "megane",
+ "garasu",
+ "bennkyou",
+ "toire"
+];
 
-var textLists = [];
-for (var i in text1){
-  textLists.push(text1[i]);
-}
 
 var checkTexts = [];
 
