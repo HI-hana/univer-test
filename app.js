@@ -4,14 +4,14 @@ var missType = 0;    //入力ミスの回数
 var cnt = 0;            //入力数
 //タイピングする文字列をここで用意しておく
 var text1 = {
-    おはよう:"ohayou",
-    おやすみ:"oyasumi",
-    車:"kuruma",
-    財布:"saihu",
-    みそ汁:"misosiru",
-    テレビ:"terebi",
-    時計:"tokei",
-    帽子:"bousi"
+  "朝ごはんは毎朝必ず食べます":"asagohannhamaiasakanarazutabemasu",
+  "今夜はとても疲れたのでもう寝ます":"konnyahatotemotukaretanodemounemasu",
+  "夜の街を歩くのはかなり危険だから注意が必要だ":"yorunomatiwoarukunohakanarikikenndakaratyyuigahituyouda",
+  "お金をたくさんもらいました":"okanewotakusannmoraimasita",
+  "明日は晴れるはずなので新しい靴をはく":"asitahahareruhazunanodeatarasiikutuwohaku",
+  "犬を飼いたいが禁止されている":"inuwokaitaigakinnsisareteiru",
+  "天気がいいと気持ちがいい":"tennkigaiitokimotigaii",
+  "服を買いたいが我慢する":"hukuwokaitaigagamannsuru"
 };
 
 var textLists = [];
@@ -47,7 +47,7 @@ document.addEventListener('keyup', keyDown, null);
 
 function start(){
   setTimeout("create()",1000);
-  setTimeout("time()",20000);
+  setTimeout("time()",30000);
   cnt = 0;
   missType = 0;
 };
