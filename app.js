@@ -26,6 +26,7 @@ var checkTexts = [];
 
 var time = function(){
   alert("ミス" + missType + "回, 入力数" + cnt + "回");
+  Button_Click();
 };
 
 var create = function createText() {
