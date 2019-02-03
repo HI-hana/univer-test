@@ -1,5 +1,5 @@
 var p = document.getElementById('text');
-
+window.location.reload();
 var missType = 0;    //入力ミスの回数
 var cnt = 0;            //入力数
 //タイピングする文字列をここで用意しておく
