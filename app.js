@@ -1,82 +1,39 @@
-var p = document.getElementById('text');
-function Button_Click() {
-  window.location.reload();
-};
-var missType = 0;    //入力ミスの回数
-var cnt = 0;            //入力数
-//タイピングする文字列をここで用意しておく
-var textLists = [
- "ohayou",
- "oyasumi",
- "arigatou",
- "kuruma",
- "saihu",
- "kennkou",
- "tokei",
- "terebi",
- "ennpitu",
- "megane",
- "garasu",
- "bennkyou",
- "toire"
-];
-
-
-var checkTexts = [];
-
-var time = function(){
-  alert("ミス" + missType + "回, 入力数" + cnt + "回");
-  Button_Click();
-};
-
-var create = function createText() {
-    clr();
-    //文字列をランダムに取得する
-    var rnd = Math.floor(Math.random() * textLists.length);
-    //前の文字列を削除してから次の文字列を表示する
-    p.textContent = '';
-
-    //文字列を1文字ずつに分解して、それぞれにspanタグを挿入する
-    checkTexts = textLists[rnd].split('').map(function(value) {
-        var span = document.createElement('span');
-
-        span.textContent = value;
-        p.appendChild(span);
-
-        return span;
-    });
-}
-
-document.addEventListener('keyup', keyDown, null);
-
-function start(){
-  setTimeout("create()",1000);
-  setTimeout("time()",30000);
-  cnt = 0;
-  missType = 0;
-};
-
-function clr(){
-  document.js.box.value = "";
-};
-
-function keyDown(e) {
-    if(e.keyCode == "32" && "16"){
-      start();
-    }
-    //キーボードからの入力は「e.key」に格納されている
-   if(e.key === checkTexts[0].textContent) {
-        checkTexts[0].className = 'add-blue';
-        cnt++;
-
-        //0番目の配列要素を削除して、次の1文字を比較対象にする
-        checkTexts.shift();
-
-        //配列要素が空っぽになったら次の問題を出す
-        if(!checkTexts.length) {
-          create()
-        };
-  }else if(e.key !== checkTexts[0].textContent){
-    missType++;
-  }
-}
+<!doctype html>
+<html>
+  <head>
+    <meta name=”viewport” content=”width=device-width,user-scalable=no”　charset="utf-8" />
+    <title>予備実験</title>
+    <style>
+      body{
+        height:100%;
+        margin:0;
+      }
+      #text {
+        margin-top: 50px;
+        font-size: 80%;
+        font-weight: bold;
+        color: #666;
+        text-align: center;
+      }
+      span {
+        transition: all 300ms 0s ease;
+      }
+      .add-blue {
+        color: #00f;
+      }
+      div {
+        text-align: center;
+        margin-bottom:20px
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p id="jap"></p>
+    <p id="text"></p>
+    <form name = "js">
+    <div><input type = "text" name = "box" value = "spaceキーでスタート" oninput = "keyDown(e)" onfocus="if(this.value==this.defaultValue){this.value=''}"></div>
+    <div><input type="button" value="このページを再読込します" onclick="window.location.reload();" /></div>
+    <script src="app.js"></script>
+  </body>
+</html>
