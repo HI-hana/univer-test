@@ -21,8 +21,10 @@ body{
   }
   input{
       width:80%;
-      font-size: 200%;
       text-align: center;
+  }
+input [type=text] {
+    font-size: 16px;
   }
   #text{
     width: 80%;
