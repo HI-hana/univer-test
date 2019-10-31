@@ -18,8 +18,10 @@ body{
     text-align: center;
     margin-bottom:40px;
   }
-  .form input[type=text] {
-  font-size: 20px;
+.form input[type=text] {
+      font-size: 20px;
+      width:300px;
+      text-align: center;
 }
 
   #text{
