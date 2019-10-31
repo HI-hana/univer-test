@@ -19,6 +19,11 @@ body{
     margin-bottom:40px;
   }
   input {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      border: none;
       width:80%;
       text-align: center;
       font-size: 16px;
