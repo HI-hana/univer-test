@@ -20,6 +20,7 @@ body{
   }
   .form input[type=text] {
   font-size: 20px;
+   width:80%;
 }
 
   #text{
