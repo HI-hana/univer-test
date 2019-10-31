@@ -20,11 +20,11 @@ body{
   }
 .form input[type=text] {
       font-size: 20px;
-      width:300px;
+      width:90%;
       text-align: center;
 }
 
   #text{
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
