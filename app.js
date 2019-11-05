@@ -13,9 +13,9 @@ let cnt = 0;            //入力数
 let text1 = {
   "朝ごはんは毎朝必ず食べます": "asagohannhamaiasakanarazutabemasu",
   "今夜はとても疲れたのでもう寝ます": "konnyahatotemotukaretanodemounemasu",
-  "夜の街を歩くのはかなり危険だから注意が必要だ": "yorunomatiwoarukunohakanarikikenndakaratyyuigahituyouda",
+  "夜の街を歩くのは危険だ": "yorunomatiwoarukunohakikennda",
   "お金をたくさんもらいました": "okanewotakusannmoraimasita",
-  "明日は晴れるはずなので新しい靴をはく": "asitahahareruhazunanodeatarasiikutuwohaku",
+  "明日は晴れるはずだった": "asitahahareru",
   "犬を飼いたいが禁止されている": "inuwokaitaigakinnsisareteiru",
   "天気がいいと気持ちがいい": "tennkigaiitokimotigaii",
   "服を買いたいが我慢する": "hukuwokaitaigagamannsuru",
@@ -36,7 +36,7 @@ let text1 = {
   "みんなにねぎらいの言葉をかけてくれた": "minnnaninegiraninokotobawokaketekureta",
   "だれかの前だとはにかんでなにも言えない": "darekanomaedatohanikanndenanimoienai",
   "へりくだった態度になる": "herikudattataidoninaru",
-  "僕に片付けのほとんどをゆだねた": "bokunikatatukenohotonndowoyudaneta"
+  "僕に片付けのほとんどをゆだねた": "bokunikatadukenohotonndowoyudaneta"
 };
 
 let textLists = [];
