@@ -31,7 +31,7 @@ let text1 = {
   "あどけない子供の顔": "adokenaikodomonokao",
   "あの子はどんな苦労もいとわない": "anokohadonnnakuroumoitowanai",
   "うつろな目で座っていた": "uturonamedesuwatteita",
-  "本番さながらの練習をする": "honnbannsangaranorennsyuuwosuru",
+  "本番さながらの練習をする": "honnbannsanagaranorennsyuuwosuru",
   "急に転校生が来てとてもとまどった": "kyuunitennkouseigakitetotemotomadotta",
   "みんなにねぎらいの言葉をかけてくれた": "minnnaninegiraninokotobawokaketekureta",
   "だれかの前だとはにかんでなにも言えない": "darekanomaedatohanikanndenanimoienai",
