@@ -21,12 +21,12 @@ body{
     text-align: center;
     margin-bottom:40px;
   }
-.form input[type=text] {
+body .form input[type=text] {
       font-size: 20px;
       text-align: center;
 }
 
   #text{
-    font-size: 500%;
+    font-size: 300%;
     text-align: center;
   }
