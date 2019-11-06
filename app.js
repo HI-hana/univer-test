@@ -87,7 +87,7 @@ function clr() {
 };
 
 function keyDown(e) {
-  if (e.keyCode == "32") {
+  if (e.keyCode == "13") {
     start();
   }
   //キーボードからの入力は「e.key」に格納されている
