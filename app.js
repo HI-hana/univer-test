@@ -91,7 +91,7 @@ function keyDown(e) {
     start();
   }
   //キーボードからの入力は「e.key」に格納されている
-  if (e.key === checkTexts[0].textContent) {
+  if (e.key == checkTexts[0].textContent) {
     checkTexts[0].className = 'add-blue';
     cnt++;
 
