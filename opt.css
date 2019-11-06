@@ -6,8 +6,8 @@ body{
     text-align: center;
   }
   p {
-    margin:0 auto;
     font-size: 300%;
+    margin:0 auto;
     text-align: center;
   }
   span {
@@ -27,7 +27,3 @@ body .form input[type=text] {
       font-size: 20px;
       text-align: center;
 }
-
-  #text{
-    
-  }
