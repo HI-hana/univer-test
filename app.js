@@ -104,5 +104,6 @@ function keyDown(e) {
     };
   } else if (e.key !== checkTexts[0].textContent) {
     missType++;
+    cnt++;
   }
 }
